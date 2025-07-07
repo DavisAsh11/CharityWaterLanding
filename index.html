@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>charity: water - Pour Into What Matters</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    .left-panel {
+      flex: 1.1;
+      background: #7eb6c9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0;
+      position: relative;
+    }
+    .main-image {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-bottom: 4px solid #fff;
+      border-right: 4px solid #7eb6c9;
+      border-radius: 0 0 0 0;
+      margin-bottom: 0;
+      box-shadow: none;
+      display: block;
+    }
+    .supporting-text {
+      background: #7eb6c9;
+      color: #183153;
+      font-size: 1.15rem;
+      text-align: center;
+      width: 100%;
+      padding: 32px 24px 24px 24px;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .right-panel {
+      flex: 1;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 48px 48px 0 48px;
+      box-shadow: none;
+      min-width: 420px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .logo-icon {
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .logo-text {
+      font-size: 1.35rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: #222;
+    }
+    h1 {
+      font-size: 3.2rem;
+      margin: 0 0 8px 0;
+      line-height: 1.05;
+      color: #222;
+      font-weight: 700;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    hr {
+      width: 90%;
+      border: none;
+      border-top: 6px solid #183153;
+      margin: 0 0 24px 0;
+      border-radius: 2px;
+    }
+    .subheadline {
+      font-size: 1.18rem;
+      color: #222;
+      margin-bottom: 38px;
+      line-height: 1.5;
+      text-align: center;
+      width: 100%;
+    }
+    .cta-button {
+      background: #FFD600;
+      color: #222;
+      border: none;
+      border-radius: 50px;
+      padding: 18px 38px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(24,49,83,0.08);
+      transition: background 0.2s;
+      letter-spacing: 0.04em;
+      margin: 0 auto;
+      display: block;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    }
+    .cta-button:hover {
+      background: #ffe066;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .left-panel, .right-panel {
+        flex: unset;
+        width: 100%;
+        min-height: unset;
+        box-shadow: none;
+        padding: 0;
+      }
+      .main-image {
+        height: 220px;
+      }
+      .right-panel {
+        align-items: center;
+        text-align: center;
+        min-width: unset;
+        padding: 32px 12px 0 12px;
+      }
+      .logo {
+        justify-content: center;
+      }
+      .subheadline {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <img src="images/Nepal_2022_CG-7991.jpg" alt="Collecting water" class="main-image">
+      <div class="supporting-text">
+        <p>Across the globe, millions lack access to clean, safe water.</p>
+        <p>Your support funds sustainable solutions—100% of your donation goes straight to the field.</p>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="logo">
+        <span class="logo-icon">
+  <svg width="28" height="28" viewBox="0 0 28 28">
+    <rect width="28" height="28" rx="6" fill="#FFD600"/>
+    <path d="M14 7C12 11 10 12.5 10 15.5C10 17.5 11.5 19 14 19C16.5 19 18 17.5 18 15.5C18 12.5 16 11 14 7Z" fill="#183153"/>
+  </svg>
+</span>
+<span class="logo-text">charity: water</span>
+      </div>
+      <h1>Pour Into<br>What Matters</h1>
+      <hr>
+      <p class="subheadline">
+        Fund clean water for underserved communities—<br>
+        and follow your impact from the first drop to the final tap.
+      </p>
+      <button class="cta-button">START POURING CHANGE</button>
+    </div>
+  </div>
+</body>
+</html>
